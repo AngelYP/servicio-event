@@ -10,7 +10,7 @@ export default function Table() {
 
   return (
     <MaterialTable
-      title="Editable Example"
+      title="Invitados"
       columns={state.columns}
       data={state.data}
       icons={tableIcons}

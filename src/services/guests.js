@@ -17,23 +17,17 @@ import Search from '@material-ui/icons/Search';
 import ViewColumn from '@material-ui/icons/ViewColumn';
 
 export const columns = [
-    { title: 'Name', field: 'name' },
-    { title: 'Surname', field: 'surname' },
-    { title: 'Birth Year', field: 'birthYear', type: 'numeric' },
-    {
-        title: 'Birth Place',
-        field: 'birthCity',
-        lookup: { 34: 'İstanbul', 63: 'Şanlıurfa' },
-    },
+    { title: 'Nombre (s)', field: 'name' },
+    { title: 'Aplellido (s)', field: 'surname' },
+    { title: 'Acomañante', field: 'accompanist' },
 ];
 
 export const data = [
-    { name: 'Mehmet', surname: 'Baran', birthYear: 1987, birthCity: 63 },
+    { name: 'Pape', surname: 'López', accompanist: 'María la del Barrio' },
     {
-        name: 'Zerya Betül',
-        surname: 'Baran',
-        birthYear: 2017,
-        birthCity: 34,
+        name: 'Saul',
+        surname: 'Loco',
+        accompanist: 'Marimar',
     },
 ];
 
