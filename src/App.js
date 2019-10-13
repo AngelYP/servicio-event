@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Table from './components/Container/Table'
+import Container from './components/Container'
 import Header from './components/Header'
 import { Grid } from '@material-ui/core';
 
@@ -9,7 +9,7 @@ function App() {
         <Grid container>
             <Grid item xs={12}>
                 <Header/>
-                <Table/>
+                <Container/>
             </Grid>
         </Grid>
     );

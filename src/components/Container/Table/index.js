@@ -7,7 +7,6 @@ class Table extends React.Component {
     super(props);
     this.state = {
       columns: [
-        { title: '#', field: 'uuid' },
         { title: 'Nombre', field: 'name' },
         { title: '¿Está acompañado?', field: 'accompanied' },
         { title: 'Nombre de acompañante', field: 'accompanist' },
