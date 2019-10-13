@@ -115,8 +115,8 @@ api.get('/guest/update/:uuid/:name/:accompanied/:accompanist/:email/:hotel/:invo
   res.send(guest)
 })
 
-api.get('/guest/create/:name/:accompanied/:accompanist/:email/:hotel/:invoice/:attended', async (req, res, next) => {
-  const { name, accompanied, accompanist, email, hotel, invoice, attended} = req.params
+api.get('/guest/create/:name/:accompanied/:accompanist/:email/:hotel/:invoice/:attended/:bus', async (req, res, next) => {
+  const { name, accompanied, accompanist, email, hotel, invoice, attended, bus} = req.params
 
   debug(`request to /guest/create`)
 
@@ -129,7 +129,8 @@ api.get('/guest/create/:name/:accompanied/:accompanist/:email/:hotel/:invoice/:a
         email: email,
         hotel: hotel,
         invoice: invoice,
-        attended: attended
+        attended: attended,
+        bus: bus
       })
   } catch (e) {
     return next(e)
