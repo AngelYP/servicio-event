@@ -16,18 +16,31 @@ import SaveAlt from '@material-ui/icons/SaveAlt';
 import Search from '@material-ui/icons/Search';
 import ViewColumn from '@material-ui/icons/ViewColumn';
 
+//import api from 'api';
+
 export const columns = [
-    { title: 'Nombre (s)', field: 'name' },
-    { title: 'Aplellido (s)', field: 'surname' },
-    { title: 'Acomañante', field: 'accompanist' },
+    { title: 'uuid', field: 'uuid' },
+    { title: 'name', field: 'name' },
+    { title: 'accompanied', field: 'accompanied' },
+    { title: 'accompanist', field: 'accompanist' },
+    { title: 'email', field: 'email' },
+    { title: 'hotel', field: 'hotel' },
+    { title: 'invoice', field: 'invoice' },
+    { title: 'bus', field: 'bus' },
+    { title: 'attended', field: 'attended' }
 ];
 
 export const data = [
-    { name: 'Pape', surname: 'López', accompanist: 'María la del Barrio' },
     {
-        name: 'Saul',
-        surname: 'Loco',
-        accompanist: 'Marimar',
+        uuid: '1',
+        name: 'JOSÉ ISAAC LABRA RIVERA',
+        accompanied: true,
+        accompanist: 'CELINDA SALGADO BRITO',
+        email: 'unimorventas@hotmail.com',
+        hotel: 'FIESTA INN ALTOZANO',
+        invoice: 'OP226',
+        attended: true,
+        bus: null
     },
 ];
 
