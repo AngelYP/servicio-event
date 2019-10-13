@@ -79,3 +79,20 @@ export const localization={
         editTooltip: "Editar"
     }
 }
+
+export const data=async function () {
+    try {
+        const response = await fetch(`http://localhost:4000/api/guests`);
+        if (!response.ok) {
+            throw Error(response.statusText);
+        }
+        const json = await response.json();
+        console.log(json);
+
+        return json;
+    } catch (error) {
+        console.log(error);
+        return null
+    }
+}
+
