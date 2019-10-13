@@ -74,8 +74,8 @@ api.get('/guest/delete/:uuid', async (req, res, next) => {
   res.send(`Got a DELETE request at /${uuid}`)
 })
 
-api.get('/guest/update/:uuid', async (req, res, next) => {
-  const { uuid } = req.params
+api.get('/guest/update/:uuid/:name/:accompanied/:accompanist/:email/:hotel/:invoice/:attended', async (req, res, next) => {
+  const { uuid, name, accompanied, accompanist, email, hotel, invoice, attended } = req.params
 
   debug(`request to /guest/${uuid}`)
 
@@ -85,13 +85,13 @@ api.get('/guest/update/:uuid', async (req, res, next) => {
     if(guest){
       Guest.createOrUpdate({
         uuid: uuid,
-        name: 'JOSÉ ISAAC LABRA RIVERA',
-        accompanied: true,
-        accompanist: 'CELINDA SALGADO BRITO',
-        email: 'unimorventas@hotmail.com',
-        hotel: 'FIESTA INN ALTOZANO',
-        invoice: 'OP226',
-        attended: true
+        name: name,
+        accompanied: accompanied,
+        accompanist: accompanist,
+        email: email,
+        hotel: hotel,
+        invoice: invoice,
+        attended: attended
       })
     }
   } catch (e) {
@@ -105,8 +105,8 @@ api.get('/guest/update/:uuid', async (req, res, next) => {
   res.send(guest)
 })
 
-api.get('/guest/create/:uuid', async (req, res, next) => {
-  const { uuid } = req.params
+api.get('/guest/create/:uuid/:name/:accompanied/:accompanist/:email/:hotel/:invoice/:attended', async (req, res, next) => {
+  const { uuid, name, accompanied, accompanist, email, hotel, invoice, attended } = req.params
 
   debug(`request to /guest/${uuid}`)
 
@@ -116,13 +116,13 @@ api.get('/guest/create/:uuid', async (req, res, next) => {
     if (!guest || guest == null) {
       guest = await Guest.createOrUpdate({
         uuid: uuid,
-        name: 'JOSÉ ISAAC LABRA RIVERA',
-        accompanied: true,
-        accompanist: 'CELINDA SALGADO BRITO',
-        email: 'unimorventas@hotmail.com',
-        hotel: 'FIESTA INN ALTOZANO',
-        invoice: 'OP226',
-        attended: true
+        name: name,
+        accompanied: accompanied,
+        accompanist: accompanist,
+        email: email,
+        hotel: hotel,
+        invoice: invoice,
+        attended: attended
       })
     }else{
       return next(new Error(`Guest found with uuid ${uuid}`))

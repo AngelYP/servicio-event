@@ -9,11 +9,11 @@ module.exports = function setupGuestModel (config) {
   return sequelize.define('guest', {
     uuid: {
       type: Sequelize.STRING,
-      allowNull: false
+      allowNull: true
     },
     name: {
       type: Sequelize.STRING,
-      allowNull: false
+      allowNull: true
     },
     accompanied: {
       type: Sequelize.BOOLEAN,
