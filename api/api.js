@@ -3,8 +3,8 @@
 const debug = require('debug')('servicio-event:api:routes')
 const express = require('express')
 const asyncify = require('express-asyncify')
-const auth = require('express-jwt')
-const guard = require('express-jwt-permissions')()
+// const auth = require('express-jwt')
+// const guard = require('express-jwt-permissions')()
 const db = require('db')
 
 const config = require('./config')

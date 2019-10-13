@@ -18,31 +18,31 @@ module.exports = function setupGuestModel (config) {
     accompanied: {
       type: Sequelize.BOOLEAN,
       allowNull: false,
-      defaultValue: false
+      defaultValue: true
     },
     accompanist: {
       type: Sequelize.STRING,
-      allowNull: false
+      allowNull: true
     },
     email: {
       type: Sequelize.STRING,
-      allowNull: false
+      allowNull: true
     },
     hotel: {
       type: Sequelize.STRING,
-      allowNull: false
+      allowNull: true
     },
     invoice: {
       type: Sequelize.STRING,
-      allowNull: false
+      allowNull: true
     },
     bus: {
       type: Sequelize.INTEGER,
-      allowNull: false
+      allowNull: true
     },
     attended: {
       type: Sequelize.BOOLEAN,
-      allowNull: false,
+      allowNull: true,
       defaultValue: false
     }
   })
