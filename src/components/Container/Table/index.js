@@ -2,7 +2,7 @@ import React from 'react';
 import MaterialTable from 'material-table';
 import { columns, data, tableIcons, localization } from '../../../services/guests'
 
-class Assistants extends React.Component {
+class Table extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -33,3 +33,5 @@ class Assistants extends React.Component {
     })
   }
 }
+
+export default Table;
