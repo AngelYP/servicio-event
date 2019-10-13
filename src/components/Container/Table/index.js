@@ -36,9 +36,10 @@ class Table extends React.Component {
   render() {
     return (
       <MaterialTable
-        title="Editable Preview"
+        title="Invitados Preview"
         columns={this.state.columns}
         data={this.state.data}
+        icons={tableIcons}
         editable={{
           onRowAdd: newData =>
             new Promise((resolve, reject) => {
