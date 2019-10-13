@@ -17,7 +17,7 @@ class Table extends React.Component {
         { title: 'bus', field: 'bus' },
         { title: 'attended', field: 'attended' }
       ],
-      rows: [],
+      data: [],
     }
   }
 
@@ -28,7 +28,7 @@ class Table extends React.Component {
   async getData() {
     data().then(({ guests }) => {
       console.log('CategoryListSidebar', guests);
-      this.setState({ rows: guests })
+      this.setState({ data: guests })
       console.log('CategoryListSidebar', guests);
     })
   }
