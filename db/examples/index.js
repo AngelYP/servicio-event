@@ -13,8 +13,7 @@ async function run() {
 
   const { Guest } = await db(config).catch(handleFatalError)
 
-  const guest1 = await Guest.createOrUpdate({
-    uuid: '1',
+  const guest1 = await Guest.create({
     name: 'JOSÉ ISAAC LABRA RIVERA',
     accompanied: true,
     accompanist: 'CELINDA SALGADO BRITO',
@@ -27,8 +26,7 @@ async function run() {
   console.log(guest1)
 
 
-  const guest2 = await Guest.createOrUpdate({
-    uuid: '2',
+  const guest2 = await Guest.create({
     name: 'ALEJANDRO JARA SORIA',
     accompanied: true,
     accompanist: 'DOLORES RAMOS ORTEGA',
@@ -41,8 +39,7 @@ async function run() {
   console.log(guest2)
 
 
-  const guest3 = await Guest.createOrUpdate({
-    uuid: '3',
+  const guest3 = await Guest.create({
     name: 'EDUARDO ENRIQUE ESCAMILLA SALGADO',
     accompanied: true,
     accompanist: 'INDRA YARIT ROMAN LOPEZ',
@@ -55,8 +52,7 @@ async function run() {
   console.log(guest3)
 
 
-  const guest4 = await Guest.createOrUpdate({
-    uuid: '4',
+  const guest4 = await Guest.create({
     name: 'MIGUEL ANGEL TORO HERNÁNDEZ',
     accompanied: true,
     accompanist: 'LILLIÁN RÍOS Y VALLES',
@@ -69,8 +65,7 @@ async function run() {
   console.log(guest4)
 
 
-  const guest5 = await Guest.createOrUpdate({
-    uuid: '5',
+  const guest5 = await Guest.create({
     name: 'ADRÍAN DÍAZ BARRIGA CHÁVEZ',
     accompanied: true,
     accompanist: 'MARIA DE LOURDES RANGEL SÁNCHEZ',
@@ -83,8 +78,7 @@ async function run() {
   console.log(guest5)
 
 
-  const guest6 = await Guest.createOrUpdate({
-    uuid: '6',
+  const guest6 = await Guest.create({
     name: 'JESUS MARGARITA ELIZABETH RUIZ SANDEZ',
     accompanied: true,
     accompanist: 'EDMUNDO RAMIREZ OLIVAS',
@@ -97,8 +91,7 @@ async function run() {
   console.log(guest6)
 
 
-  const guest7 = await Guest.createOrUpdate({
-    uuid: '7',
+  const guest7 = await Guest.create({
     name: 'SOCORRO ROSARIO SOTO FERNANDEZ',
     accompanied: true,
     accompanist: 'ROSARIO JIMENEZ SOTO',
@@ -111,8 +104,7 @@ async function run() {
   console.log(guest7)
 
 
-  const guest8 = await Guest.createOrUpdate({
-    uuid: '8',
+  const guest8 = await Guest.create({
     name: 'ADRIAN VENTURA LARA',
     accompanied: true,
     accompanist: 'MAYRA VANESSA MARTINEZ AVILA',
@@ -125,8 +117,7 @@ async function run() {
   console.log(guest8)
 
 
-  const guest9 = await Guest.createOrUpdate({
-    uuid: '9',
+  const guest9 = await Guest.create({
     name: 'AMALIA VIZCARRA BERUMEN',
     accompanied: true,
     accompanist: 'RUTH CHÁVEZ SOLIS',
@@ -139,8 +130,7 @@ async function run() {
   console.log(guest9)
 
 
-  const guest10 = await Guest.createOrUpdate({
-    uuid: '10',
+  const guest10 = await Guest.create({
     name: 'MARTIN GUTIERREZ GARCIA',
     accompanied: true,
     accompanist: 'MARIA LUISA GARDUÑO DE GUTIERREZ',
@@ -153,8 +143,7 @@ async function run() {
   console.log(guest10)
 
 
-  const guest11 = await Guest.createOrUpdate({
-    uuid: '11',
+  const guest11 = await Guest.create({
     name: 'ABEL GRACIANO AGUAYO',
     accompanied: true,
     accompanist: 'ROSALVA RUIZ CAMPA',
@@ -167,8 +156,7 @@ async function run() {
   console.log(guest11)
 
 
-  const guest12 = await Guest.createOrUpdate({
-    uuid: '12',
+  const guest12 = await Guest.create({
     name: 'SERGIO GONZÁLEZ GONZÁLEZ',
     accompanied: true,
     accompanist: 'VIRGINIA LETICIA CHAVEZ RIOS',
@@ -181,8 +169,7 @@ async function run() {
   console.log(guest12)
 
 
-  const guest13 = await Guest.createOrUpdate({
-    uuid: '13',
+  const guest13 = await Guest.create({
     name: 'GUILLERMO FEDERICO LASH DE LA FUENTE',
     accompanied: true,
     accompanist: 'LOURDES LARRAZOLO DE LASH',
@@ -195,8 +182,7 @@ async function run() {
   console.log(guest13)
 
 
-  const guest14 = await Guest.createOrUpdate({
-    uuid: '14',
+  const guest14 = await Guest.create({
     name: 'JOSÉ DE JESÚS URIBE ZÚÑIGA',
     accompanied: true,
     accompanist: 'LILY VELÁZQUEZ',
@@ -209,8 +195,7 @@ async function run() {
   console.log(guest14)
 
 
-  const guest15 = await Guest.createOrUpdate({
-    uuid: '15',
+  const guest15 = await Guest.create({
     name: 'ROBERTO GONZÁLEZ MARTÍNEZ',
     accompanied: true,
     accompanist: 'JAZMIN DE LOS SANTOS ARELLANO',
@@ -223,8 +208,7 @@ async function run() {
   console.log(guest15)
 
 
-  const guest16 = await Guest.createOrUpdate({
-    uuid: '16',
+  const guest16 = await Guest.create({
     name: 'GUILLERMO URSUA ALVAREZ',
     accompanied: true,
     accompanist: 'MARTHA ALICIA DIAZ DE URSUA',
@@ -237,8 +221,7 @@ async function run() {
   console.log(guest16)
 
 
-  const guest17 = await Guest.createOrUpdate({
-    uuid: '17',
+  const guest17 = await Guest.create({
     name: 'GILBERTO CEDILLO RIOS',
     accompanied: true,
     accompanist: 'ANA MARIA MARTINEZ',
@@ -251,8 +234,7 @@ async function run() {
   console.log(guest17)
 
 
-  const guest18 = await Guest.createOrUpdate({
-    uuid: '18',
+  const guest18 = await Guest.create({
     name: 'JOSE MANUEL SANCHEZ CARRANCO',
     accompanied: true,
     accompanist: 'VIRNA ALEJANDRA VEGA BLANNO GARCÍA',
@@ -265,8 +247,7 @@ async function run() {
   console.log(guest18)
 
 
-  const guest19 = await Guest.createOrUpdate({
-    uuid: '19',
+  const guest19 = await Guest.create({
     name: 'MARTINO BARSSE NAVARRO',
     accompanied: true,
     accompanist: 'VANNIA YADIRA REYES RAMIREZ',
@@ -279,8 +260,7 @@ async function run() {
   console.log(guest19)
 
 
-  const guest20 = await Guest.createOrUpdate({
-    uuid: '20',
+  const guest20 = await Guest.create({
     name: 'MERCEDES PÉREZ VASCONCELOS',
     accompanied: true,
     accompanist: 'VIRIDIANA MAR DIAZ',
@@ -293,8 +273,7 @@ async function run() {
   console.log(guest20)
 
 
-  const guest21 = await Guest.createOrUpdate({
-    uuid: '21',
+  const guest21 = await Guest.create({
     name: 'STEEPHEN ARTURO MARTINEZ GUERRERO',
     accompanied: true,
     accompanist: 'LARISSA MÉNDEZ CEJAR',
@@ -307,8 +286,7 @@ async function run() {
   console.log(guest21)
 
 
-  const guest22 = await Guest.createOrUpdate({
-    uuid: '22',
+  const guest22 = await Guest.create({
     name: 'JORGE ABEL CHARRUF CACERES',
     accompanied: true,
     accompanist: 'CLAUDINA GASQUE TORAYA',
@@ -321,8 +299,7 @@ async function run() {
   console.log(guest22)
 
 
-  const guest23 = await Guest.createOrUpdate({
-    uuid: '23',
+  const guest23 = await Guest.create({
     name: 'GABRIEL COVARRUBIAS LOMELÍ',
     accompanied: true,
     accompanist: 'ILLIAN ARES DE COVARRUBIAS',
@@ -335,8 +312,7 @@ async function run() {
   console.log(guest23)
 
 
-  const guest24 = await Guest.createOrUpdate({
-    uuid: '24',
+  const guest24 = await Guest.create({
     name: 'JESUS HERRERA FRANCO',
     accompanied: true,
     accompanist: 'LAURA ELSA BAÑOS REYES',
@@ -348,8 +324,7 @@ async function run() {
   console.log('--guest--')
   console.log(guest24)
 
-  const guest25 = await Guest.createOrUpdate({
-    uuid: '25',
+  const guest25 = await Guest.create({
     name: 'LUIS FERNANDO PUERTO GUTIERREZ',
     accompanied: false,
     accompanist: '',
@@ -362,8 +337,7 @@ async function run() {
   console.log(guest25)
 
 
-  const guest26 = await Guest.createOrUpdate({
-    uuid: '26',
+  const guest26 = await Guest.create({
     name: 'ALBERTO JOSE ABRAHAM XACUR',
     accompanied: true,
     accompanist: 'DANIELA GASQUE TORAYA',
@@ -376,8 +350,7 @@ async function run() {
   console.log(guest26)
 
 
-  const guest27 = await Guest.createOrUpdate({
-    uuid: '27',
+  const guest27 = await Guest.create({
     name: 'ALEJANDRO GOMORY MARTINEZ',
     accompanied: true,
     accompanist: 'MARIANA DURAN CACERES',
@@ -390,8 +363,7 @@ async function run() {
   console.log(guest27)
 
 
-  const guest28 = await Guest.createOrUpdate({
-    uuid: '28',
+  const guest28 = await Guest.create({
     name: 'JAVIER GONZÁLEZ SIERRA',
     accompanied: true,
     accompanist: 'ADRIANA ROMERO SAVEDRA',
@@ -404,8 +376,7 @@ async function run() {
   console.log(guest28)
 
 
-  const guest29 = await Guest.createOrUpdate({
-    uuid: '29',
+  const guest29 = await Guest.create({
     name: 'JOSE LUIS OROZCO LUQUE',
     accompanied: true,
     accompanist: 'DIANA BARRAZA RUBIO',
@@ -418,8 +389,7 @@ async function run() {
   console.log(guest29)
 
 
-  const guest30 = await Guest.createOrUpdate({
-    uuid: '30',
+  const guest30 = await Guest.create({
     name: 'GLADYS YAZMIN DURAN VARELA',
     accompanied: true,
     accompanist: 'DIANA GUZMAN ORQUIZ',
@@ -432,8 +402,7 @@ async function run() {
   console.log(guest30)
 
 
-  const guest31 = await Guest.createOrUpdate({
-    uuid: '31',
+  const guest31 = await Guest.create({
     name: 'EVERARDO PADILLA FLORES',
     accompanied: true,
     accompanist: 'JOSÉ ANTONIO LAZCANO PONCE',
@@ -446,8 +415,7 @@ async function run() {
   console.log(guest31)
 
 
-  const guest32 = await Guest.createOrUpdate({
-    uuid: '32',
+  const guest32 = await Guest.create({
     name: 'PABLO NAVARRO GODINEZ',
     accompanied: true,
     accompanist: 'MARIA TERESA TENORIO TELLEZ',
@@ -459,8 +427,7 @@ async function run() {
   console.log('--guest--')
   console.log(guest32)
 
-  const guest33 = await Guest.createOrUpdate({
-    uuid: '33',
+  const guest33 = await Guest.create({
     name: 'NYDIA CAMPOS TENORIO',
     accompanied: false,
     accompanist: '',
@@ -473,8 +440,7 @@ async function run() {
   console.log(guest33)
 
 
-  const guest34 = await Guest.createOrUpdate({
-    uuid: '34',
+  const guest34 = await Guest.create({
     name: 'JOSÉ N.ARIAS DÍAZ BARRIGA',
     accompanied: true,
     accompanist: 'MIRNA ZERMEÑO DE ARIAS',
@@ -487,8 +453,7 @@ async function run() {
   console.log(guest34)
 
 
-  const guest35 = await Guest.createOrUpdate({
-    uuid: '35',
+  const guest35 = await Guest.create({
     name: 'JUAN MANUEL GUERRA NORIEGA',
     accompanied: true,
     accompanist: 'MA.ELENA SALINAS',
@@ -500,8 +465,7 @@ async function run() {
   console.log('--guest--')
   console.log(guest35)
 
-  const guest36 = await Guest.createOrUpdate({
-    uuid: '36',
+  const guest36 = await Guest.create({
     name: 'ROGELIO GARCIA TREVIÑO',
     accompanied: false,
     accompanist: '',
@@ -514,8 +478,7 @@ async function run() {
   console.log(guest36)
 
 
-  const guest37 = await Guest.createOrUpdate({
-    uuid: '37',
+  const guest37 = await Guest.create({
     name: 'SERGIO ALEJANDRO ROLDAN',
     accompanied: true,
     accompanist: 'ADOLFO ALVAREZ',
@@ -528,8 +491,7 @@ async function run() {
   console.log(guest37)
 
 
-  const guest38 = await Guest.createOrUpdate({
-    uuid: '38',
+  const guest38 = await Guest.create({
     name: 'JORGE RIVADENEYRA DIAZ',
     accompanied: true,
     accompanist: 'GABRIELA GONZALEZ ALCALA',
@@ -542,8 +504,7 @@ async function run() {
   console.log(guest38)
 
 
-  const guest39 = await Guest.createOrUpdate({
-    uuid: '39',
+  const guest39 = await Guest.create({
     name: 'GABRIEL FIGUEROA URIBE',
     accompanied: true,
     accompanist: 'ROCIO GOMEZ RAMIREZ',
@@ -556,8 +517,7 @@ async function run() {
   console.log(guest39)
 
 
-  const guest40 = await Guest.createOrUpdate({
-    uuid: '40',
+  const guest40 = await Guest.create({
     name: 'ALFREDO SAHAGUN',
     accompanied: true,
     accompanist: 'MARICELA PEÑA NUÑEZ',
@@ -570,8 +530,7 @@ async function run() {
   console.log(guest40)
 
 
-  const guest41 = await Guest.createOrUpdate({
-    uuid: '41',
+  const guest41 = await Guest.create({
     name: 'PEDRO RUIZ VELAZCO',
     accompanied: true,
     accompanist: 'ADRIANA TALANCON',
@@ -584,8 +543,7 @@ async function run() {
   console.log(guest41)
 
 
-  const guest42 = await Guest.createOrUpdate({
-    uuid: '42',
+  const guest42 = await Guest.create({
     name: 'FERNANDO AMADOR',
     accompanied: true,
     accompanist: 'MONICA ALVARADO',
@@ -598,8 +556,7 @@ async function run() {
   console.log(guest42)
 
 
-  const guest43 = await Guest.createOrUpdate({
-    uuid: '43',
+  const guest43 = await Guest.create({
     name: 'OLIVIA VALADEZ LOPEZ',
     accompanied: true,
     accompanist: 'MIGUEL A.RODRIGUEZ VALADEZ',
@@ -612,8 +569,7 @@ async function run() {
   console.log(guest43)
 
 
-  const guest44 = await Guest.createOrUpdate({
-    uuid: '44',
+  const guest44 = await Guest.create({
     name: 'ALBINO BELMONTES ALVAREZ',
     accompanied: true,
     accompanist: 'CLAUDIA CORONADO HERNANDEZ',
@@ -626,8 +582,7 @@ async function run() {
   console.log(guest44)
 
 
-  const guest45 = await Guest.createOrUpdate({
-    uuid: '45',
+  const guest45 = await Guest.create({
     name: 'MARIO HERNANDEZ GONZALEZ',
     accompanied: true,
     accompanist: 'FERNANDO DUEÑAS',
@@ -640,8 +595,7 @@ async function run() {
   console.log(guest45)
 
 
-  const guest46 = await Guest.createOrUpdate({
-    uuid: '46',
+  const guest46 = await Guest.create({
     name: 'CARLOS ROBERTO BRAÑA MUÑOZ',
     accompanied: true,
     accompanist: 'LORENA DE BRAÑA',
@@ -654,8 +608,7 @@ async function run() {
   console.log(guest46)
 
 
-  const guest47 = await Guest.createOrUpdate({
-    uuid: '47',
+  const guest47 = await Guest.create({
     name: 'ALEJANDRA HURTADO HERNANDEZ',
     accompanied: true,
     accompanist: 'MARTIN EDUARDO MEDINA CURIEL',
@@ -668,8 +621,7 @@ async function run() {
   console.log(guest47)
 
 
-  const guest48 = await Guest.createOrUpdate({
-    uuid: '48',
+  const guest48 = await Guest.create({
     name: 'FAUSTINO FERNANDEZ DIAZ GONZALEZ',
     accompanied: true,
     accompanist: 'BRUNA DUEÑAS GALLI',
@@ -682,8 +634,7 @@ async function run() {
   console.log(guest48)
 
 
-  const guest49 = await Guest.createOrUpdate({
-    uuid: '49',
+  const guest49 = await Guest.create({
     name: 'CARLOS ENRIQUE LARES PONCE',
     accompanied: true,
     accompanist: 'REYNA GABRIELA HINOJOSA VALENCIA',
@@ -696,8 +647,7 @@ async function run() {
   console.log(guest49)
 
 
-  const guest50 = await Guest.createOrUpdate({
-    uuid: '50',
+  const guest50 = await Guest.create({
     name: 'CESAR ESTRADA SOLIS',
     accompanied: true,
     accompanist: 'ROSALIA MARTINEZ',
@@ -710,8 +660,7 @@ async function run() {
   console.log(guest50)
 
 
-  const guest51 = await Guest.createOrUpdate({
-    uuid: '51',
+  const guest51 = await Guest.create({
     name: 'EDUARDO MEDINA CARBAJAL',
     accompanied: true,
     accompanist: 'YANETTE GARCIA ACOSTA',
@@ -724,8 +673,7 @@ async function run() {
   console.log(guest51)
 
 
-  const guest52 = await Guest.createOrUpdate({
-    uuid: '52',
+  const guest52 = await Guest.create({
     name: 'MA.JESUS FLORES SALDAÑA',
     accompanied: true,
     accompanist: 'JOANA BERENICIE CERVANTES FLORES',
@@ -738,8 +686,7 @@ async function run() {
   console.log(guest52)
 
 
-  const guest53 = await Guest.createOrUpdate({
-    uuid: '53',
+  const guest53 = await Guest.create({
     name: 'JOSE LUIS LOPEZ LOZADA',
     accompanied: true,
     accompanist: 'CONCEPCION SALAZAR ROMERO',
@@ -752,8 +699,7 @@ async function run() {
   console.log(guest53)
 
 
-  const guest54 = await Guest.createOrUpdate({
-    uuid: '54',
+  const guest54 = await Guest.create({
     name: 'JOSE EUGENIO LAGARDE AMAYA',
     accompanied: true,
     accompanist: 'KRISTELLE FEUCHTER BORBOA',
@@ -766,8 +712,7 @@ async function run() {
   console.log(guest54)
 
 
-  const guest55 = await Guest.createOrUpdate({
-    uuid: '55',
+  const guest55 = await Guest.create({
     name: 'CLAUDIA E.MENDEZ MANZANO',
     accompanied: true,
     accompanist: 'JORGE EDUARDO CORTES RIOS',
@@ -780,8 +725,7 @@ async function run() {
   console.log(guest55)
 
 
-  const guest56 = await Guest.createOrUpdate({
-    uuid: '56',
+  const guest56 = await Guest.create({
     name: 'HECTOR HORACIO DAVILA RODRIGUEZ',
     accompanied: true,
     accompanist: 'PATRICIA HERNÁNDEZ',
@@ -794,8 +738,7 @@ async function run() {
   console.log(guest56)
 
 
-  const guest57 = await Guest.createOrUpdate({
-    uuid: '57',
+  const guest57 = await Guest.create({
     name: 'LUIS FELIPE HERNÁNDEZ CAMARERO',
     accompanied: true,
     accompanist: 'TERESA DE JESÚS TIBURCIO ARANO',
@@ -808,8 +751,7 @@ async function run() {
   console.log(guest57)
 
 
-  const guest58 = await Guest.createOrUpdate({
-    uuid: '58',
+  const guest58 = await Guest.create({
     name: 'MIGUEL ANGEL MANJARREZ BELTRAN',
     accompanied: true,
     accompanist: 'MARIA ORALIA FELIX GARCIA',
@@ -822,8 +764,7 @@ async function run() {
   console.log(guest58)
 
 
-  const guest59 = await Guest.createOrUpdate({
-    uuid: '59',
+  const guest59 = await Guest.create({
     name: 'ALVARO RODRIGUEZ GARCIA',
     accompanied: true,
     accompanist: 'SIGIFREDO SÁNCHEZ VARGAS',
@@ -836,8 +777,7 @@ async function run() {
   console.log(guest59)
 
 
-  const guest60 = await Guest.createOrUpdate({
-    uuid: '60',
+  const guest60 = await Guest.create({
     name: 'ANA MARGARITA COYAC MOLINA',
     accompanied: true,
     accompanist: 'CLAUDIA AGUILAR N',
@@ -850,8 +790,7 @@ async function run() {
   console.log(guest60)
 
 
-  const guest61 = await Guest.createOrUpdate({
-    uuid: '61',
+  const guest61 = await Guest.create({
     name: 'ARISTOTELES MARTINEZ MONDRAGON',
     accompanied: true,
     accompanist: 'ANA GABRIELA ESTRADA GARCIA',
@@ -864,8 +803,7 @@ async function run() {
   console.log(guest61)
 
 
-  const guest62 = await Guest.createOrUpdate({
-    uuid: '62',
+  const guest62 = await Guest.create({
     name: 'ROGELIO GABRIEL ROSAS ESTRADA',
     accompanied: true,
     accompanist: 'ARISTOTELES MARTINEZ ESTRADA',
@@ -876,8 +814,7 @@ async function run() {
   }).catch(handleFatalError)
   console.log(guest62)
 
-  const guest63 = await Guest.createOrUpdate({
-    uuid: '63',
+  const guest63 = await Guest.create({
     name: 'EURIPIDES GREGORIO VALLE RUIZ',
     accompanied: false,
     accompanist: '',
@@ -890,8 +827,7 @@ async function run() {
   console.log(guest63)
 
 
-  const guest64 = await Guest.createOrUpdate({
-    uuid: '64',
+  const guest64 = await Guest.create({
     name: 'EFREN HERNANDEZ CASTILLO',
     accompanied: true,
     accompanist: 'MARIA IZABET HERNANDEZ MURILLO',
@@ -902,8 +838,7 @@ async function run() {
   }).catch(handleFatalError)
   console.log(guest64)
 
-  const guest65 = await Guest.createOrUpdate({
-    uuid: '65',
+  const guest65 = await Guest.create({
     name: 'CARLOS SALCEDO ALATRISTE',
     accompanied: false,
     accompanist: '',
@@ -915,8 +850,7 @@ async function run() {
   console.log('--guest--')
   console.log(guest65)
 
-  const guest66 = await Guest.createOrUpdate({
-    uuid: '66',
+  const guest66 = await Guest.create({
     name: 'LORENZO MIGUEL OLIVARES JUÁREZ',
     accompanied: true,
     accompanist: 'VÍCTOR MANUEL SALVATIERRA DELGADO',
@@ -929,8 +863,7 @@ async function run() {
   console.log(guest66)
 
 
-  const guest67 = await Guest.createOrUpdate({
-    uuid: '67',
+  const guest67 = await Guest.create({
     name: 'NORMA LETICIA FLORES BERRIOS',
     accompanied: true,
     accompanist: 'STEFFANI PAULINA YAÑEZ FLORES',
@@ -942,8 +875,7 @@ async function run() {
   console.log('--guest--')
   console.log(guest67)
 
-  const guest68 = await Guest.createOrUpdate({
-    uuid: '68',
+  const guest68 = await Guest.create({
     name: 'JUAN CASTILLO LEMUS',
     accompanied: true,
     accompanist: 'MARGARITA SANTOYO MARTÍNEZ',
@@ -954,8 +886,7 @@ async function run() {
   console.log('--guest--')
   console.log(guest68)
 
-  const guest69 = await Guest.createOrUpdate({
-    uuid: '69',
+  const guest69 = await Guest.create({
     name: 'JESÚS GRANADOS CAMPOS',
     accompanied: true,
     accompanist: 'MARÍA ANTONIETA CONTRERAS LAGUNA',
@@ -967,8 +898,7 @@ async function run() {
   console.log(guest69)
 
 
-  const guest70 = await Guest.createOrUpdate({
-    uuid: '70',
+  const guest70 = await Guest.create({
     name: 'FRANCISCO TOBIAS RODRIGUEZ',
     accompanied: true,
     accompanist: 'ANA RUBI GARCIA',
@@ -981,8 +911,7 @@ async function run() {
   console.log(guest70)
 
 
-  const guest71 = await Guest.createOrUpdate({
-    uuid: '71',
+  const guest71 = await Guest.create({
     name: 'JOSÉ JORGE SANDOVAL MARTÍNEZ',
     accompanied: true,
     accompanist: 'HÉCTOR JARQUÍN SÁNCHEZ',
@@ -994,8 +923,7 @@ async function run() {
   console.log('--guest--')
   console.log(guest71)
 
-  const guest72 = await Guest.createOrUpdate({
-    uuid: '72',
+  const guest72 = await Guest.create({
     name: 'JORGE VASQUEZ DEL MERCARDO Y MARIN',
     accompanied: true,
     accompanist: 'ELSA MOCTEZUMA Y ARVIZU',
@@ -1006,8 +934,7 @@ async function run() {
   console.log('--guest--')
   console.log(guest72)
 
-  const guest73 = await Guest.createOrUpdate({
-    uuid: '73',
+  const guest73 = await Guest.create({
     name: 'JOSE GUADALUPE LEAL CORONA',
     accompanied: true,
     accompanist: 'YOLANDA EUGENIA BARRAGAN MURILLO',
@@ -1018,8 +945,7 @@ async function run() {
   console.log('--guest--')
   console.log(guest73)
 
-  const guest74 = await Guest.createOrUpdate({
-    uuid: '74',
+  const guest74 = await Guest.create({
     name: 'IMELDA ASUNCION MEZA PARRILLA',
     accompanied: true,
     accompanist: '',
@@ -1031,8 +957,7 @@ async function run() {
   console.log('--guest--')
   console.log(guest74)
 
-  const guest75 = await Guest.createOrUpdate({
-    uuid: '75',
+  const guest75 = await Guest.create({
     name: 'JOSE ANTONIO MENDEZ GARCIA',
     accompanied: true,
     accompanist: 'NORALIA RODRIGUEZ',
@@ -1045,8 +970,7 @@ async function run() {
   console.log(guest75)
 
 
-  const guest76 = await Guest.createOrUpdate({
-    uuid: '76',
+  const guest76 = await Guest.create({
     name: 'JUAN MANUEL NAVARRO TELLEZ',
     accompanied: true,
     accompanist: 'FELIPE MORALES DOLORES',
@@ -1058,8 +982,7 @@ async function run() {
   console.log('--guest--')
   console.log(guest76)
 
-  const guest77 = await Guest.createOrUpdate({
-    uuid: '77',
+  const guest77 = await Guest.create({
     name: 'CLAUDIA MANRÍGUEZ GARDEA',
     accompanied: true,
     accompanist: 'HÉCTOR VARGAS GARCÍA',
@@ -1072,8 +995,7 @@ async function run() {
   console.log(guest77)
 
 
-  const guest78 = await Guest.createOrUpdate({
-    uuid: '78',
+  const guest78 = await Guest.create({
     name: 'MÓNICA DE JESÚS PÉREZ MORALES',
     accompanied: true,
     accompanist: 'MIGUEL ÁNGEL VÁZQUEZ MALDONADO',
@@ -1086,8 +1008,7 @@ async function run() {
   console.log(guest78)
 
 
-  const guest79 = await Guest.createOrUpdate({
-    uuid: '79',
+  const guest79 = await Guest.create({
     name: 'OSCAR GEOVANI ORTEGA PONCE',
     accompanied: true,
     accompanist: 'GRISEL CENOBIO VAZQUEZ',
@@ -1100,8 +1021,7 @@ async function run() {
   console.log(guest79)
 
 
-  const guest80 = await Guest.createOrUpdate({
-    uuid: '80',
+  const guest80 = await Guest.create({
     name: 'FRANCISCO ALVAREZ AGUILAR',
     accompanied: true,
     accompanist: 'ALFREDO SALAZAR ZAMORA',
@@ -1114,8 +1034,7 @@ async function run() {
   console.log(guest80)
 
 
-  const guest81 = await Guest.createOrUpdate({
-    uuid: '81',
+  const guest81 = await Guest.create({
     name: 'BALTAZAR MARTÍNEZ QUIROZ',
     accompanied: true,
     accompanist: 'ESPINOSA QUIROZ GLORIA',
@@ -1128,8 +1047,7 @@ async function run() {
   console.log(guest81)
 
 
-  const guest82 = await Guest.createOrUpdate({
-    uuid: '82',
+  const guest82 = await Guest.create({
     name: 'CARLOS PAUL BREMER BACA',
     accompanied: true,
     accompanist: 'SALVADOR CALDERON AGUIRRE',
@@ -1142,8 +1060,7 @@ async function run() {
   console.log(guest82)
 
 
-  const guest83 = await Guest.createOrUpdate({
-    uuid: '83',
+  const guest83 = await Guest.create({
     name: 'ELVIA NORIEGA HERNÁNDEZ',
     accompanied: true,
     accompanist: 'LIDIANA OLIVER GARCÍA',
@@ -1156,8 +1073,7 @@ async function run() {
   console.log(guest83)
 
 
-  const guest84 = await Guest.createOrUpdate({
-    uuid: '84',
+  const guest84 = await Guest.create({
     name: 'ERIDANI RIOS ROMERO',
     accompanied: true,
     accompanist: 'NELY ESTEFANIA SANTOS RUIZ',
@@ -1170,8 +1086,7 @@ async function run() {
   console.log(guest84)
 
 
-  const guest85 = await Guest.createOrUpdate({
-    uuid: '85',
+  const guest85 = await Guest.create({
     name: 'JOSE GUADALUPE ROMAN FLORES',
     accompanied: true,
     accompanist: 'GABRIELA ORTEGA DE ROMAN',
@@ -1184,8 +1099,7 @@ async function run() {
   console.log(guest85)
 
 
-  const guest86 = await Guest.createOrUpdate({
-    uuid: '86',
+  const guest86 = await Guest.create({
     name: 'MARTHA TISCAREÑO ALONSO',
     accompanied: true,
     accompanist: 'MA.DE LOURDES CHIRINO HELGUERA',
@@ -1197,8 +1111,7 @@ async function run() {
   console.log('--guest--')
   console.log(guest86)
 
-  const guest87 = await Guest.createOrUpdate({
-    uuid: '87',
+  const guest87 = await Guest.create({
     name: 'GUADALUPE MAYORGA MALABEHAR',
     accompanied: true,
     accompanist: 'ENRIQUE CONTRERAS BARRÓN',
@@ -1208,8 +1121,7 @@ async function run() {
   console.log('--guest--')
   console.log(guest87)
 
-  const guest88 = await Guest.createOrUpdate({
-    uuid: '88',
+  const guest88 = await Guest.create({
     name: 'KAREN YADIRA SANTANDER GUADARRAMA',
     accompanied: true,
     accompanist: '*',
@@ -1220,8 +1132,7 @@ async function run() {
   console.log('--guest--')
   console.log(guest88)
 
-  const guest89 = await Guest.createOrUpdate({
-    uuid: '89',
+  const guest89 = await Guest.create({
     name: 'KARLA ERIKA LÓPEZ JURADO',
     accompanied: true,
     accompanist: 'CARLOS MANUEL LÓPEZ JURADO',

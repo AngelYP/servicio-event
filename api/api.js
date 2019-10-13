@@ -115,17 +115,14 @@ api.get('/guest/update/:uuid/:name/:accompanied/:accompanist/:email/:hotel/:invo
   res.send(guest)
 })
 
-api.get('/guest/create/:uuid/:name/:accompanied/:accompanist/:email/:hotel/:invoice/:attended', async (req, res, next) => {
-  const { uuid, name, accompanied, accompanist, email, hotel, invoice, attended } = req.params
+api.get('/guest/create/:name/:accompanied/:accompanist/:email/:hotel/:invoice/:attended/:bus', async (req, res, next) => {
+  const { name, accompanied, accompanist, email, hotel, invoice, attended, bus } = req.params
 
-  debug(`request to /guest/${uuid}`)
+  debug(`request to /guest/create`)
 
   let guest
   try {
-    guest = await Guest.findByUuid(uuid)
-    if (!guest || guest == null) {
-      guest = await Guest.createOrUpdate({
-        uuid: uuid,
+    guest = await Guest.create({
         name: name,
         accompanied: accompanied,
         accompanist: accompanist,
@@ -134,9 +131,6 @@ api.get('/guest/create/:uuid/:name/:accompanied/:accompanist/:email/:hotel/:invo
         invoice: invoice,
         attended: attended
       })
-    }else{
-      return next(new Error(`Guest found with uuid ${uuid}`))
-    }
   } catch (e) {
     return next(e)
   }

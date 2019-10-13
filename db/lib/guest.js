@@ -1,6 +1,12 @@
 'use strict'
 
 module.exports = function setupGuest (GuestModel) {
+
+  async function create(guest) {
+    const result = await GuestModel.create(guest)
+    return result.toJSON()
+  }
+
   async function createOrUpdate (guest) {
     const cond = {
       where: {
@@ -70,6 +76,7 @@ module.exports = function setupGuest (GuestModel) {
   }
 
   return {
+    create,
     createOrUpdate,
     findById,
     findByUuid,

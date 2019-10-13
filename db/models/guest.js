@@ -8,8 +8,9 @@ module.exports = function setupGuestModel (config) {
 
   return sequelize.define('guest', {
     uuid: {
-      type: Sequelize.STRING,
-      allowNull: true
+      type: Sequelize.INTEGER,
+      autoIncrement: true,
+      primaryKey: true
     },
     name: {
       type: Sequelize.STRING,
