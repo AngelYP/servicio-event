@@ -74,4 +74,64 @@ api.get('/guest/delete/:uuid', async (req, res, next) => {
   res.send(`Got a DELETE request at /${uuid}`)
 })
 
+api.get('/guest/update/:uuid', async (req, res, next) => {
+  const { uuid } = req.params
+
+  debug(`request to /guest/${uuid}`)
+
+  let guest
+  try {
+    guest = await Guest.findByUuid(uuid)
+    if(guest){
+      Guest.createOrUpdate({
+        uuid: uuid,
+        name: 'JOSÉ ISAAC LABRA RIVERA',
+        accompanied: true,
+        accompanist: 'CELINDA SALGADO BRITO',
+        email: 'unimorventas@hotmail.com',
+        hotel: 'FIESTA INN ALTOZANO',
+        invoice: 'OP226',
+        attended: true
+      })
+    }
+  } catch (e) {
+    return next(e)
+  }
+
+  if (!guest) {
+    return next(new Error(`Guest not found with uuid ${uuid}`))
+  }
+
+  res.send(guest)
+})
+
+api.get('/guest/create/:uuid', async (req, res, next) => {
+  const { uuid } = req.params
+
+  debug(`request to /guest/${uuid}`)
+
+  let guest
+  try {
+    guest = await Guest.findByUuid(uuid)
+    if (!guest || guest == null) {
+      guest = await Guest.createOrUpdate({
+        uuid: uuid,
+        name: 'JOSÉ ISAAC LABRA RIVERA',
+        accompanied: true,
+        accompanist: 'CELINDA SALGADO BRITO',
+        email: 'unimorventas@hotmail.com',
+        hotel: 'FIESTA INN ALTOZANO',
+        invoice: 'OP226',
+        attended: true
+      })
+    }else{
+      return next(new Error(`Guest found with uuid ${uuid}`))
+    }
+  } catch (e) {
+    return next(e)
+  }
+
+  res.send(guest)
+})
+
 module.exports = api
