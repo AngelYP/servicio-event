@@ -26,7 +26,7 @@ class Table extends React.Component {
   }
 
   async getData() {
-    getGuests().then(({ guests }) => {
+    data().then(({ guests }) => {
       console.log('CategoryListSidebar', guests);
       this.setState({ rows: guests })
       console.log('CategoryListSidebar', guests);
