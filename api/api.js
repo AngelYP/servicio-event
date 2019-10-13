@@ -115,8 +115,8 @@ api.get('/guest/update/:uuid/:name/:accompanied/:accompanist/:email/:hotel/:invo
   res.send(guest)
 })
 
-api.get('/guest/create/:name/:accompanied/:accompanist/:email/:hotel/:invoice/:attended/:bus', async (req, res, next) => {
-  const { name, accompanied, accompanist, email, hotel, invoice, attended, bus } = req.params
+api.get('/guest/create/:name/:accompanied/:accompanist/:email/:hotel/:invoice/:attended', async (req, res, next) => {
+  const { name, accompanied, accompanist, email, hotel, invoice, attended} = req.params
 
   debug(`request to /guest/create`)
 
