@@ -84,7 +84,7 @@ api.get('/guest/delete/:uuid', async (req, res, next) => {
   res.send(`Got a DELETE request at /${uuid}`)
 })
 
-api.get('/guest/update/:uuid/:name/:accompanied/:accompanist/:email/:hotel/:invoice/:attended', async (req, res, next) => {
+api.get('/guest/update/:uuid/:name/:accompanied/:accompanist/:email/:hotel/:invoice/:attended/:bus', async (req, res, next) => {
   const { uuid, name, accompanied, accompanist, email, hotel, invoice, attended } = req.params
 
   debug(`request to /guest/${uuid}`)
@@ -101,7 +101,8 @@ api.get('/guest/update/:uuid/:name/:accompanied/:accompanist/:email/:hotel/:invo
         email: email,
         hotel: hotel,
         invoice: invoice,
-        attended: attended
+        attended: attended,
+        bus: bus
       })
     }
   } catch (e) {
