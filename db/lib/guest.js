@@ -51,12 +51,31 @@ module.exports = function setupGuest (GuestModel) {
     })
   }
 
+  async function deleteByUuid(uuid) {
+    const existingGuest = await GuestModel.findOne({
+      where: {
+        uuid
+      }
+    })
+
+    if (existingGuest) {
+      return GuestModel.destroy({
+        where: {
+          uuid
+        }
+      })
+    }
+
+    return "Don't exist"
+  }
+
   return {
     createOrUpdate,
     findById,
     findByUuid,
     findAll,
     findAttended,
-    findByName
+    findByName,
+    deleteByUuid
   }
 }

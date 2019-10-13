@@ -59,4 +59,19 @@ api.get('/guest/:uuid', async (req, res, next) => {
   res.send(guest)
 })
 
+api.get('/guest/delete/:uuid', async (req, res, next) => {
+  const { uuid } = req.params
+
+  debug(`request to /guest/delete/${uuid}`)
+
+  try {
+    await Guest.deleteByUuid(uuid)
+  } catch (e) {
+    return next(e)
+  }
+
+
+  res.send(`Got a DELETE request at /${uuid}`)
+})
+
 module.exports = api
