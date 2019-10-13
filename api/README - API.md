@@ -27,3 +27,6 @@ $ node
 
 ## Implementando permisos con express-jwt-permissions
 npm install express-jwt-permissions --save
+
+## CORS package
+npm install --save cors

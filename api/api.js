@@ -11,8 +11,11 @@ const config = require('./config')
 
 const api = asyncify(express.Router())
 
+const cors = require("cors")
+
 let services, Guest
 
+api.use(cors())
 api.use('*', async (req, res, next) => {
   if (!services) {
     debug('Connecting to database')
