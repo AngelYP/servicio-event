@@ -1,6 +1,6 @@
 import React from 'react';
 import MaterialTable from 'material-table';
-import { columns, data, tableIcons, localization } from './../../services/guests'
+import { columns, data, tableIcons, localization } from '../../../services/guests'
 
 export default function Table() {
   const [state, setState] = React.useState({
