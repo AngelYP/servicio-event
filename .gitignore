@@ -50,3 +50,9 @@ node_modules
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+api/config.js
+
+db/examples/index.js
+
+db/setup.js
