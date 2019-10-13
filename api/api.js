@@ -37,10 +37,14 @@ api.get('/guests', async (req, res, next) => {
   debug('A request has come to /guests')
 
   const guests = await Guest.findAll()
-  console.log('--guests--')
-  console.log(guests)
 
-  res.send(guests)
+  //var jsonGuests = JSON.stringify(guests);
+  var json = Object.assign({}, guests)
+
+  console.log('--guests--')
+  console.log(json)
+
+  res.send(json)
 })
 
 api.get('/guest/:uuid', async (req, res, next) => {
