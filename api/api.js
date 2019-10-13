@@ -5,23 +5,23 @@ const express = require('express')
 const asyncify = require('express-asyncify')
 const auth = require('express-jwt')
 const guard = require('express-jwt-permissions')()
-//const db = require('db')
+const db = require('db')
 
 const config = require('./config')
 
 const api = asyncify(express.Router())
 
-let services
+let services, Guest
 
 api.use('*', async (req, res, next) => {
   if (!services) {
     debug('Connecting to database')
     try {
-      //services = await db(config.db)
+      services = await db(config.db)
     } catch (e) {
       return next(e)
     }
-
+    Guest = services.Guest
   }
   next()
 })
@@ -30,29 +30,33 @@ api.get('/', function (req, res, next) {
   res.send('hello world')
 })
 
-api.get('/tests', auth(config.auth), async (req, res, next) => {
-  debug('A request has come to /tests')
+api.get('/guests', async (req, res, next) => {
+  debug('A request has come to /guests')
 
-/*
-  const { user } = req
+  const guests = await Guest.findAll()
+  console.log('--guests--')
+  console.log(guests)
 
-  if (!user || !user.username) {
-    return next(new Error('Not authorized'))
-  }
+  res.send(guests)
+})
 
-  let agents = []
+api.get('/guest/:uuid', async (req, res, next) => {
+  const { uuid } = req.params
+
+  debug(`request to /guest/${uuid}`)
+
+  let guest
   try {
-    if (user.admin) {
-      agents = await Agent.findConnected()
-    } else {
-      agents = await Agent.findByUsername(user.username)
-    }
+    guest = await Guest.findByUuid(uuid)
   } catch (e) {
     return next(e)
   }
-*/
-  res.send('Authorized')
-})
 
+  if (!guest) {
+    return next(new Error(`Guest not found with uuid ${uuid}`))
+  }
+
+  res.send(guest)
+})
 
 module.exports = api

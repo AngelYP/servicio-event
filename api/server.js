@@ -36,7 +36,7 @@ if (!module.parent) {
   process.on('unhandledRejection', handleFatalError)
 
   server.listen(port, () => {
-    console.log(`${chalk.green('[servicio-event-api')} server listening on port ${port}`)
+    console.log(`${chalk.green('[servicio-event-api]')} server listening on port ${port}`)
   })
 }
 
