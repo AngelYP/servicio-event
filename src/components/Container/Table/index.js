@@ -73,7 +73,7 @@ class Table extends React.Component {
                   const index = data.indexOf(oldData);
                   data[index] = newData;
                   this.setState({ data }, () => resolve());
-                  this.updateGuest(newData);
+                  this.updateRow(newData);
                 }
                 resolve()
               }, 1000)
