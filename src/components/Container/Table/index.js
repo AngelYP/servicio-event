@@ -8,13 +8,13 @@ class Table extends React.Component {
     this.state = {
       columns: [
         { title: 'Nombre', field: 'name' },
-        { title: '¿Está acompañado?', field: 'accompanied' },
+        { title: '¿Está acompañado?', field: 'accompanied', lookup:{true:'Sí', false:'No'}, },
         { title: 'Nombre de acompañante', field: 'accompanist' },
         { title: 'Email', field: 'email' },
         { title: 'Hotel', field: 'hotel' },
         { title: 'Factura', field: 'invoice' },
         { title: 'Autobús', field: 'bus' },
-        { title: 'Asistencia', field: 'attended', }
+        { title: 'Asistencia', field: 'attended', lookup:{true:'Sí', false:'No'}, }
       ],
       data: [],
     }
