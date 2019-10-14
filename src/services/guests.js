@@ -111,7 +111,9 @@ export const insertGuest = async function (data) {
 
 export const updateGuest = async function (data) {
     try {
-        const response = await fetch(`http://localhost:4000/api/guest/update/`+data.uuid+`/`+data.name+`/`+data.accompanied+`/`+data.accompanist+`/`+data.email+`/`+data.hotel+`/`+data.invoice+`/`+data.attended+`/`+data.bus);
+        const url=`http://localhost:4000/api/guest/update/`+data.uuid+`/`+data.name+`/`+data.accompanied+`/`+(data.accompanist || null)+`/`+(data.email || null)+`/`+data.hotel+`/`+data.invoice+`/`+data.attended+`/`+(data.bus || null);
+        console.log(url);
+        const response = await fetch(url);
         if (!response.ok) {
             throw Error(response.statusText);
         }
