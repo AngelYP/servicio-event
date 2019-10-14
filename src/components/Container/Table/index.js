@@ -51,6 +51,10 @@ class Table extends React.Component {
         columns={this.state.columns}
         data={this.state.data}
         icons={tableIcons}
+        localization={localization}
+        options={{
+          actionsColumnIndex: -1
+        }}
         editable={{
           onRowAdd: newData =>
             new Promise((resolve, reject) => {
