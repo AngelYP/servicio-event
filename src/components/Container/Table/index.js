@@ -1,6 +1,6 @@
 import React from 'react';
 import MaterialTable from 'material-table';
-import { columns, data, tableIcons, localization } from '../../../services/guests'
+import { columns, data, tableIcons, localization, insertGuest, updateGuest, deleteGuest } from '../../../services/guests'
 
 class Table extends React.Component {
   constructor(props) {
@@ -14,7 +14,7 @@ class Table extends React.Component {
         { title: 'Hotel', field: 'hotel' },
         { title: 'Factura', field: 'invoice' },
         { title: 'Autobús', field: 'bus' },
-        { title: 'Fecha de registro', field: 'attended' }
+        { title: 'Asistencia', field: 'attended', }
       ],
       data: [],
     }
@@ -32,10 +32,23 @@ class Table extends React.Component {
     })
   }
 
+  async setNewRow(newData){
+    insertGuest(newData);
+    console.log('Simón');
+  }
+  async updateRow(updatedRow){
+    updateGuest(updatedRow);
+    console.log('También');
+  }
+  async deleteRow(deletedRow){
+    deleteGuest(deletedRow);
+    console.log('Chingón');
+  }
+
   render() {
     return (
       <MaterialTable
-        title="Invitados Preview"
+        title="Invitados"
         columns={this.state.columns}
         data={this.state.data}
         icons={tableIcons}
@@ -47,6 +60,7 @@ class Table extends React.Component {
                   const data = this.state.data;
                   data.push(newData);
                   this.setState({ data }, () => resolve());
+                  this.setNewRow(newData);
                 }
                 resolve()
               }, 1000)
@@ -59,6 +73,7 @@ class Table extends React.Component {
                   const index = data.indexOf(oldData);
                   data[index] = newData;
                   this.setState({ data }, () => resolve());
+                  this.updateGuest(newData);
                 }
                 resolve()
               }, 1000)
@@ -71,6 +86,7 @@ class Table extends React.Component {
                   const index = data.indexOf(oldData);
                   data.splice(index, 1);
                   this.setState({ data }, () => resolve());
+                  this.deleteRow(oldData);
                 }
                 resolve()
               }, 1000)

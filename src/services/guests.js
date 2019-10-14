@@ -93,3 +93,50 @@ export const data = async function () {
     }
 }
 
+export const insertGuest = async function (data) {
+    try {
+        const response = await fetch(`http://localhost:4000/api/guest/create/`+data.name+`/`+data.accompanied+`/`+data.accompanist+`/`+data.email+`/`+data.hotel+`/`+data.invoice+`/`+data.attended+`/`+data.bus);
+        if (!response.ok) {
+            throw Error(response.statusText);
+        }
+        const json = await response.json();
+        console.log(json);
+
+        return json;
+    } catch (error) {
+        console.log(error);
+        return null
+    }
+}
+
+export const updateGuest = async function (data) {
+    try {
+        const response = await fetch(`http://localhost:4000/api/guest/update/`+data.uuid+`/`+data.name+`/`+data.accompanied+`/`+data.accompanist+`/`+data.email+`/`+data.hotel+`/`+data.invoice+`/`+data.attended+`/`+data.bus);
+        if (!response.ok) {
+            throw Error(response.statusText);
+        }
+        const json = await response.json();
+        console.log(json);
+
+        return json;
+    } catch (error) {
+        console.log(error);
+        return null
+    }
+}
+
+export const deleteGuest = async function (data) {
+    try {
+        const response = await fetch(`http://localhost:4000/api/guest/delete/`+data.uuid);
+        if (!response.ok) {
+            throw Error(response.statusText);
+        }
+        const json = await response.json();
+        console.log(json);
+
+        return json;
+    } catch (error) {
+        console.log(error);
+        return null
+    }
+}
