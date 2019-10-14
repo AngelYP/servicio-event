@@ -20,7 +20,6 @@ async function run() {
     email: 'unimorventas@hotmail.com',
     hotel: 'FIESTA INN ALTOZANO',
     invoice: 'OP226',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -34,7 +33,6 @@ async function run() {
     email: 'tesoreria@canacintraens.org',
     hotel: 'HORIZON',
     invoice: 'OP200',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -48,7 +46,6 @@ async function run() {
     email: 'enrique.escamilla@tailorplan.com',
     hotel: 'HORIZON',
     invoice: 'OP227 - OP228',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -62,7 +59,6 @@ async function run() {
     email: 'toro_hernandez_miguel_a@cat.com',
     hotel: 'GAMMA BELÓ',
     invoice: 'OP225',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -76,7 +72,6 @@ async function run() {
     email: 'adiaz.cconsultores@gmail.com',
     hotel: 'FIESTA INN ALTOZANO',
     invoice: 'OP212',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -90,7 +85,6 @@ async function run() {
     email: 'calibert@prodigy.net.mx',
     hotel: 'FIESTA INN ALTOZANO',
     invoice: 'OP214',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -104,7 +98,6 @@ async function run() {
     email: 'lamarkt@hotmail.com',
     hotel: 'FIESTA INN ALTOZANO',
     invoice: 'OP213',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -118,7 +111,6 @@ async function run() {
     email: 'adrian.ventura@integralmfc.com',
     hotel: 'HORIZON',
     invoice: 'OP231 - OP215',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -132,7 +124,6 @@ async function run() {
     email: 'licamaliavizcarra@gmail.com',
     hotel: 'FIESTA INN ALTOZANO',
     invoice: 'OP216',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -146,7 +137,6 @@ async function run() {
     email: 'mgutierrez@sagax.com.mx',
     hotel: 'HORIZON',
     invoice: 'OP229',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -160,7 +150,6 @@ async function run() {
     email: 'graciano@psmmexico.com',
     hotel: 'GAMMA BELÓ',
     invoice: 'OP230 - OP282',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -174,7 +163,6 @@ async function run() {
     email: 'facturas.bionat@gmail.com',
     hotel: 'NO',
     invoice: 'OP233',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -188,7 +176,6 @@ async function run() {
     email: 'glash@glmanufacturas.com',
     hotel: 'NO',
     invoice: 'OP232',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -202,7 +189,6 @@ async function run() {
     email: 'jesusuribe@me.com',
     hotel: 'HORIZON',
     invoice: 'OP242',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -216,7 +202,6 @@ async function run() {
     email: 'asistentedireccion@canacintra-leon.org.mx',
     hotel: 'FIESTA INN ALTOZANO',
     invoice: 'OP234',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -230,7 +215,6 @@ async function run() {
     email: 'guillermoursua@grupoursua.net',
     hotel: 'HORIZON',
     invoice: 'OP241',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -244,7 +228,6 @@ async function run() {
     email: 'gilcedillomrcivm@gmail.com',
     hotel: 'GAMMA BELÓ',
     invoice: 'OP238',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -258,7 +241,6 @@ async function run() {
     email: 'josemanuel@casapublicidad.mx',
     hotel: 'GAMMA BELÓ',
     invoice: 'OP239',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -272,7 +254,6 @@ async function run() {
     email: 'mbarsse@fabinox.com',
     hotel: 'VILLA SAN JOSÉ',
     invoice: 'OP240',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -286,7 +267,6 @@ async function run() {
     email: 'juristaintegra@hotmail.com',
     hotel: 'FIESTA INN ALTOZANO',
     invoice: 'OP246',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -300,7 +280,6 @@ async function run() {
     email: 'steephen@cideco.org',
     hotel: 'HORIZON',
     invoice: 'OP247',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -314,7 +293,6 @@ async function run() {
     email: 'jorge.charruf@laanita.com',
     hotel: 'FIESTA INN ALTOZANO',
     invoice: 'OP264',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -328,7 +306,6 @@ async function run() {
     email: 'presidencia@canacintrapuebla.org.mx',
     hotel: 'GAMMA BELÓ',
     invoice: 'OP255',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -342,7 +319,6 @@ async function run() {
     email: 'francoadmon@hotmail.com',
     hotel: 'GAMMA BELÓ',
     invoice: 'OP257',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -355,7 +331,6 @@ async function run() {
     email: 'direcciongeneral@canacintrayucatan.org.mx',
     hotel: 'FIESTA INN ALTOZANO',
     invoice: 'OP258',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -369,7 +344,6 @@ async function run() {
     email: 'ticoabraham@hotmail.com',
     hotel: 'FIESTA INN ALTOZANO',
     invoice: 'OP259',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -383,7 +357,6 @@ async function run() {
     email: 'agm@galletasdonde.com',
     hotel: 'FIESTA INN ALTOZANO',
     invoice: 'OP261',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -397,7 +370,6 @@ async function run() {
     email: 'cjgonzalez88@gmail.com',
     hotel: 'FIESTA INN ALTOZANO',
     invoice: 'OP267',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -411,7 +383,6 @@ async function run() {
     email: 'dgml12@hotmail.com',
     hotel: 'FIESTA INN ALTOZANO',
     invoice: 'OP268',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -425,7 +396,6 @@ async function run() {
     email: 'duran2002@prodigy.net.mx',
     hotel: 'FIESTA INN ALTOZANO',
     invoice: 'OP271',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -439,7 +409,6 @@ async function run() {
     email: 'alira@canacintra-saltillo.org.mx',
     hotel: 'FIESTA INN ALTOZANO',
     invoice: 'OP260',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -453,7 +422,6 @@ async function run() {
     email: 'navarrogpablo@hotmail.com',
     hotel: 'GAMMA BELÓ',
     invoice: 'OP284',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -466,7 +434,6 @@ async function run() {
     email: 'navarrogpablo@hotmail.com',
     hotel: 'GAMMA BELÓ',
     invoice: 'OP284',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -480,7 +447,6 @@ async function run() {
     email: 'j.arias@azfinechem.com.mx',
     hotel: 'FIESTA INN ALTOZANO',
     invoice: 'OP283',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -494,7 +460,6 @@ async function run() {
     email: 'jguerra@tmimx.com',
     hotel: 'FIESTA INN ALTOZANO',
     invoice: 'OP286',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -507,7 +472,6 @@ async function run() {
     email: 'rgarcia@publipak.com',
     hotel: 'VILLA SAN JOSÉ',
     invoice: 'OP289',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -521,7 +485,6 @@ async function run() {
     email: 'adolfo@smattcom.com',
     hotel: 'FIESTA INN ALTOZANO',
     invoice: 'OP287',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -535,7 +498,6 @@ async function run() {
     email: 'administracion@canacintraqro.org.mx',
     hotel: 'FIESTA INN ALTOZANO',
     invoice: 'OP288',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -549,7 +511,6 @@ async function run() {
     email: 'administracion@canacintraqro.org.mx',
     hotel: 'FIESTA INN ALTOZANO',
     invoice: 'OP288',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -563,7 +524,6 @@ async function run() {
     email: 'administracion@canacintraqro.org.mx',
     hotel: 'FIESTA INN ALTOZANO',
     invoice: 'OP288',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -577,7 +537,6 @@ async function run() {
     email: 'administracion@canacintraqro.org.mx',
     hotel: 'FIESTA INN ALTOZANO',
     invoice: 'OP288',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -591,7 +550,6 @@ async function run() {
     email: 'asistente@canacintratorreon.org',
     hotel: 'GAMMA BELÓ',
     invoice: 'OP273',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -605,7 +563,6 @@ async function run() {
     email: 'asistente@canacintratorreon.org',
     hotel: 'GAMMA BELÓ',
     invoice: 'OP273',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -619,7 +576,6 @@ async function run() {
     email: 'asistente@canacintratorreon.org',
     hotel: 'GAMMA BELÓ',
     invoice: 'OP273',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -633,7 +589,6 @@ async function run() {
     email: 'asistente@canacintratorreon.org',
     hotel: 'VILLA SAN JOSÉ',
     invoice: 'OP273',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -647,7 +602,6 @@ async function run() {
     email: 'asistente@canacintratorreon.org',
     hotel: 'GAMMA BELÓ',
     invoice: 'OP273',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -661,7 +615,6 @@ async function run() {
     email: 'asistente@canacintratorreon.org',
     hotel: 'GAMMA BELÓ',
     invoice: 'OP273',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -675,7 +628,6 @@ async function run() {
     email: 'ffdg@admintotal.com',
     hotel: 'GAMMA BELÓ',
     invoice: 'OP317',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -689,7 +641,6 @@ async function run() {
     email: 'clares@absebasculas.com',
     hotel: 'GAMMA BELÓ',
     invoice: 'OP292',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -703,7 +654,6 @@ async function run() {
     email: 'mreza@conadiac.org.mx',
     hotel: 'FIESTA INN ALTOZANO',
     invoice: 'OP298',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -717,7 +667,6 @@ async function run() {
     email: 'lalomc76b@gmail.com',
     hotel: 'GAMMA BELÓ',
     invoice: 'OP296',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -731,7 +680,6 @@ async function run() {
     email: 'facturas@prealtamira.com',
     hotel: 'HORIZON',
     invoice: 'OP297',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -745,7 +693,6 @@ async function run() {
     email: 'direccionafinap@gmail.com',
     hotel: 'FIESTA INN ALTOZANO',
     invoice: 'OP306',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -759,7 +706,6 @@ async function run() {
     email: 'asistente.direccion@canacintra.com',
     hotel: 'NO',
     invoice: 'OP293',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -773,7 +719,6 @@ async function run() {
     email: 'meclaudiam@hotmail.com',
     hotel: 'FIESTA INN ALTOZANO',
     invoice: 'OP318',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -787,7 +732,6 @@ async function run() {
     email: 'horaciodelante@prodigy.net.mx',
     hotel: 'GAMMA BELÓ',
     invoice: 'OP273',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -801,7 +745,6 @@ async function run() {
     email: 'lufeheca_56@hotmail.com',
     hotel: 'GAMMA BELÓ',
     invoice: 'OP340',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -815,7 +758,6 @@ async function run() {
     email: 'miguelangel@manjarrezimpresores.com.mx',
     hotel: 'VILLA SAN JOSÉ',
     invoice: 'OP319',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -829,7 +771,6 @@ async function run() {
     email: 'rodalvaro7@gmail.com',
     hotel: 'GAMMA BELÓ',
     invoice: 'OP312',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -843,7 +784,6 @@ async function run() {
     email: 'imprentaimpresosjl@gmail.com',
     hotel: 'FIESTA INN ALTOZANO',
     invoice: 'OP303',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -857,7 +797,6 @@ async function run() {
     email: 'administracion@conaseg.com.mx',
     hotel: 'VILLA SAN JOSÉ',
     invoice: 'OP291',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -871,7 +810,6 @@ async function run() {
     email: 'administracion@conaseg.com.mx',
     hotel: 'VILLA SAN JOSÉ',
     invoice: 'OP291',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log(guest62)
@@ -883,7 +821,6 @@ async function run() {
     email: 'facturacioncanacintra@gmail.com',
     hotel: 'FIESTA INN ALTOZANO',
     invoice: 'OP301',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -897,7 +834,6 @@ async function run() {
     email: 'delmar.agenciadeseguros@gmail.com',
     hotel: 'VILLA SAN JOSÉ',
     invoice: 'OP320',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log(guest64)
@@ -909,7 +845,6 @@ async function run() {
     email: 'salcedo@sayes.com.mx',
     hotel: 'HORIZON',
     invoice: 'OP302',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -922,7 +857,6 @@ async function run() {
     email: 'miguel_olivares22@yahoo.com.mx',
     hotel: 'FIESTA INN ALTOZANO',
     invoice: '',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -936,7 +870,6 @@ async function run() {
     email: 'factura.cartogreen@gmail.com',
     hotel: 'NO',
     invoice: 'OP311',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -948,7 +881,6 @@ async function run() {
     accompanist: 'MARGARITA SANTOYO MARTÍNEZ',
     email: 'juan.castillo@mane.com',
     hotel: 'FIESTA INN ALTOZANO',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -960,7 +892,6 @@ async function run() {
     accompanist: 'MARÍA ANTONIETA CONTRERAS LAGUNA',
     email: 'jgranados@coindissa.com.mx',
     hotel: 'FIESTA INN ALTOZANO',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -974,7 +905,6 @@ async function run() {
     email: 'direcciongeneral@maresa.biz',
     hotel: 'FIESTA INN ALTOZANO',
     invoice: 'OP304',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -988,7 +918,6 @@ async function run() {
     email: 'jorge.sandoval@corp-imt.com',
     hotel: 'FIESTA INN ALTOZANO',
     invoice: 'OP324',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -1000,7 +929,6 @@ async function run() {
     accompanist: 'ELSA MOCTEZUMA Y ARVIZU',
     email: 'vamj42@gmail.com',
     hotel: 'GAMMA BELÓ',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -1012,7 +940,6 @@ async function run() {
     accompanist: 'YOLANDA EUGENIA BARRAGAN MURILLO',
     email: 'axnpeople1@hotmail.com',
     hotel: 'HORIZON',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -1025,7 +952,6 @@ async function run() {
     email: 'presidencia@canacintraem.org.mx',
     hotel: 'FIESTA INN ALTOZANO',
     invoice: 'OP328',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -1038,7 +964,6 @@ async function run() {
     email: 'antoniomaasa@hotmail.com',
     hotel: 'NO',
     invoice: 'OP326',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -1052,7 +977,6 @@ async function run() {
     email: 'tehuacan@canacintra.org.mx',
     hotel: 'HORIZON',
     invoice: 'OP330',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -1065,7 +989,6 @@ async function run() {
     email: 'alfagama123@yahoo.com',
     hotel: 'alfagama123@yahoo.com',
     invoice: 'FIESTA INN ALTOZANO',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -1079,7 +1002,6 @@ async function run() {
     email: 'factura@cyssima.com.mx',
     hotel: 'FIESTA INN ALTOZANO',
     invoice: 'OP339',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -1093,7 +1015,6 @@ async function run() {
     email: 'administracion@cociramax.com',
     hotel: 'GAMMA BELÓ',
     invoice: 'OP327',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -1107,7 +1028,6 @@ async function run() {
     email: 'francisco.newteclab@gmail.com',
     hotel: 'GAMMA BELÓ',
     invoice: 'OP325',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -1121,7 +1041,6 @@ async function run() {
     email: 'rh@solucionesquimicasglobales.com.mx',
     hotel: 'FIESTA INN ALTOZANO',
     invoice: 'OP338',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -1135,7 +1054,6 @@ async function run() {
     email: 'carlosbremerbaca@gmail.com',
     hotel: 'GAMMA BELÓ',
     invoice: 'OP341',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -1149,7 +1067,6 @@ async function run() {
     email: 'pachuca@canacintra.org.mx',
     hotel: 'HORIZON',
     invoice: 'OP342',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -1163,7 +1080,6 @@ async function run() {
     email: 'gerencia@canacintrasjr.com',
     hotel: 'HORIZON',
     invoice: 'OP343',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -1177,7 +1093,6 @@ async function run() {
     email: 'gerencia@canacintrasjr.com',
     hotel: 'GAMMA BELÓ',
     invoice: 'OP345',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -1191,7 +1106,6 @@ async function run() {
     email: 'martha@garantiaplena.com.mx',
     hotel: 'GAMMA BELÓ',
     invoice: 'OP305',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -1202,7 +1116,6 @@ async function run() {
     accompanied: true,
     accompanist: 'ENRIQUE CONTRERAS BARRÓN',
     hotel: 'GAMMA BELÓ',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -1214,7 +1127,6 @@ async function run() {
     accompanist: '*',
     email: 'ksantander@papilia.net',
     hotel: 'GAMMA BELÓ',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
@@ -1226,7 +1138,6 @@ async function run() {
     accompanist: 'CARLOS MANUEL LÓPEZ JURADO',
     email: 'kossmekelj@hotmail.com',
     hotel: 'GAMMA BELÓ',
-    attended: true,
     bus: null
   }).catch(handleFatalError)
   console.log('--guest--')
