@@ -85,8 +85,32 @@ api.get('/guest/delete/:uuid', async (req, res, next) => {
 })
 
 api.get('/guest/update/:uuid/:name/:accompanied/:accompanist/:email/:hotel/:invoice/:attended/:bus', async (req, res, next) => {
-  const { uuid, name, accompanied, accompanist, email, hotel, invoice, attended, bus } = req.params
+  var { uuid, name, accompanied, accompanist, email, hotel, invoice, attended, bus } = req.params
 
+  if (null == name || undefined == name || name == 'null' || name == '') {
+    name = ''
+  }
+  if (null == accompanied || undefined == accompanied || accompanied == 'null' || accompanied == '') {
+    accompanied = false
+  }
+  if (null == accompanist || undefined == accompanist || accompanist == 'null' || accompanist == '') {
+    accompanist = ''
+  }
+  if (null == email || undefined == email || email == 'null' || email == '') {
+    email = ''
+  }
+  if (null == hotel || undefined == hotel || hotel == 'null' || hotel == '') {
+    hotel = ''
+  }
+  if (null == invoice || undefined == invoice || invoice == 'null' || invoice == '') {
+    invoice = ''
+  }
+  if (null == attended || undefined == attended || attended == 'null' || attended == '') {
+    attended = false
+  }
+  if (null == bus || undefined == bus || bus == 'null' || bus == '') {
+    bus = null
+  }
   debug(`request to /guest/${uuid}`)
 
   let guest
@@ -117,8 +141,32 @@ api.get('/guest/update/:uuid/:name/:accompanied/:accompanist/:email/:hotel/:invo
 })
 
 api.get('/guest/create/:name/:accompanied/:accompanist/:email/:hotel/:invoice/:attended/:bus', async (req, res, next) => {
-  const { name, accompanied, accompanist, email, hotel, invoice, attended, bus} = req.params
-
+  var { name, accompanied, accompanist, email, hotel, invoice, attended, bus} = req.params
+  
+  if (null == name || undefined ==  name ||  name == 'null') {
+    name = ''
+  }
+  if (null == accompanied || undefined ==  accompanied ||  accompanied == 'null') {
+    accompanied = false
+  }
+  if (null == accompanist || undefined ==  accompanist ||  accompanist == 'null') {
+    accompanist = ''
+  }
+  if (null == email || undefined ==  email ||  email == 'null') {
+    email = ''
+  }
+  if (null == hotel || undefined ==  hotel ||  hotel == 'null') {
+    hotel = ''
+  }
+  if (null == invoice || undefined ==  invoice ||  invoice == 'null') {
+    invoice = ''
+  }
+  if (null == attended || undefined ==  attended ||  attended == 'null') {
+    attended = false
+  }
+  if (null == bus || undefined ==  bus ||  bus == 'null') {
+    bus = null
+  }
   debug(`request to /guest/create`)
 
   let guest
@@ -136,7 +184,7 @@ api.get('/guest/create/:name/:accompanied/:accompanist/:email/:hotel/:invoice/:a
   } catch (e) {
     return next(e)
   }
-
+  
   res.send(guest)
 })
 
