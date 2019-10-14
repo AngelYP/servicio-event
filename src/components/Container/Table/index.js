@@ -12,7 +12,7 @@ class Table extends React.Component {
         { title: 'Email', field: 'email' },
         { title: 'Hotel', field: 'hotel' },
         { title: 'Factura', field: 'invoice' },
-        { title: 'Autobús', field: 'bus' },
+        { title: 'Autobús', field: 'bus', type:"numeric" },
         { title: 'Asistencia', field: 'attended', lookup:{true:'Sí', false:'No'}, }
       ],
       data: [],

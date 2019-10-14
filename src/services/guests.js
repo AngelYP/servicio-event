@@ -24,7 +24,7 @@ export const columns = [
     { title: 'email', field: 'email' },
     { title: 'hotel', field: 'hotel' },
     { title: 'invoice', field: 'invoice' },
-    { title: 'bus', field: 'bus' },
+    { title: 'bus', field: 'bus', type: "number"},
     { title: 'attended', field: 'attended' }
 ];
 
@@ -51,12 +51,24 @@ export const tableIcons = {
 
 export const localization = {
     pagination: {
-        labelDisplayedRows: '{from}-{to} of {count}'
+        labelDisplayedRows: '{from}-{to} of {count}',
+        labelRowsSelect: "registros",
+        labelRowsPerPage: "Registros por página"
     },
     toolbar: {
         nRowsSelected: '{0} row(s) selected',
         searchTooltip: "Buscar",
-        searchPlaceholder: "Buscar"
+        searchPlaceholder: "Buscar",
+        firstAriaLabel: "Primera página",
+        firstTooltip: "Primera página",
+        previousAriaLabel: "Página anterior",
+        previousTooltip: "Página anterior",
+        nextAriaLabel: "Siguiente página",
+        nextTooltip: "Siguiente página",
+        lastAriaLabel: "Última página",
+        lastTooltip: "Última página"
+        
+
     },
     header: {
         actions: 'Acciones'
