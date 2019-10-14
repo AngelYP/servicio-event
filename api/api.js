@@ -85,7 +85,7 @@ api.get('/guest/delete/:uuid', async (req, res, next) => {
 })
 
 api.get('/guest/update/:uuid/:name/:accompanied/:accompanist/:email/:hotel/:invoice/:attended/:bus', async (req, res, next) => {
-  const { uuid, name, accompanied, accompanist, email, hotel, invoice, attended } = req.params
+  const { uuid, name, accompanied, accompanist, email, hotel, invoice, attended, bus } = req.params
 
   debug(`request to /guest/${uuid}`)
 
