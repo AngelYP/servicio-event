@@ -53,12 +53,7 @@ export const localization = {
     pagination: {
         labelDisplayedRows: '{from}-{to} of {count}',
         labelRowsSelect: "registros",
-        labelRowsPerPage: "Registros por página"
-    },
-    toolbar: {
-        nRowsSelected: '{0} row(s) selected',
-        searchTooltip: "Buscar",
-        searchPlaceholder: "Buscar",
+        labelRowsPerPage: "Registros por página",
         firstAriaLabel: "Primera página",
         firstTooltip: "Primera página",
         previousAriaLabel: "Página anterior",
@@ -67,6 +62,12 @@ export const localization = {
         nextTooltip: "Siguiente página",
         lastAriaLabel: "Última página",
         lastTooltip: "Última página"
+    },
+    toolbar: {
+        nRowsSelected: '{0} row(s) selected',
+        searchTooltip: "Buscar",
+        searchPlaceholder: "Buscar",
+        
         
 
     },
