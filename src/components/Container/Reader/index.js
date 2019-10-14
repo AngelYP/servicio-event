@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import QrReader from 'react-qr-reader'
+import { Grid } from '@material-ui/core'
  
 class Reader extends Component {
     state = {
-        result: 'No result'
+        result: 'Escaneando...'
     }
     
     handleScan = data => {
@@ -19,13 +20,21 @@ class Reader extends Component {
     render() {
         return (
         <div>
-            <QrReader
-                delay={300}
-                onError={this.handleError}
-                onScan={this.handleScan}
-                style={{ width: '300px' }}
-            />
-            <p>{this.state.result}</p>
+            <Grid container>
+                <Grid item xs={12}>
+                    <QrReader
+                        delay={300}
+                        onError={this.handleError}
+                        onScan={this.handleScan}
+                        style={{ width: '300px' }}
+                    />
+                </Grid>
+                <Grid item xs={12}>
+                    <h1>{this.state.result}</h1>
+                </Grid>
+            </Grid>
+            
+            
         </div>
         )
     }

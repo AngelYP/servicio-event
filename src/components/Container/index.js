@@ -22,10 +22,10 @@ const selectContent = (menuItem) => {
     }
 }
 
-const Container = () => {
+const Container = ({thing}) => {
     const classes = useStyles();
     return <Grid container direction="row" alignItems={'center'} justify={'center'} className={classes.root}>
-        {selectContent('table')}
+        {selectContent(thing)}
     </Grid>
 }
 

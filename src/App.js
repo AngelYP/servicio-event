@@ -9,7 +9,9 @@ function App() {
         <Grid container>
             <Grid item xs={12}>
                 <Header/>
-                <Container/>
+            </Grid>
+            <Grid item xs={12}>
+                
             </Grid>
         </Grid>
     );

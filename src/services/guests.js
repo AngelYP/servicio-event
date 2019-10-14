@@ -95,7 +95,7 @@ export const data = async function () {
 
 export const insertGuest = async function (data) {
     try {
-        const response = await fetch(`http://localhost:4000/api/guest/create/`+(data.name || null)+`/`+(data.accompanied || null)+`/`+(data.accompanist || null)+`/`+(data.email || null)+`/`+(data.hotel || null)+`/`+(data.invoice || null)+`/`+(data.attended || null)+`/`+(data.bus || null));
+        const response = await fetch(`http://localhost:4000/api/guest/create/`+(data.name || null)+`/`+true+`/`+(data.accompanist || null)+`/`+(data.email || null)+`/`+(data.hotel || null)+`/`+(data.invoice || null)+`/`+(data.attended || null)+`/`+(data.bus || null));
         if (!response.ok) {
             throw Error(response.statusText);
         }
@@ -111,7 +111,7 @@ export const insertGuest = async function (data) {
 
 export const updateGuest = async function (data) {
     try {
-        const url=`http://localhost:4000/api/guest/update/`+(data.uuid || null)+`/`+(data.name || null)+`/`+(data.accompanied || null)+`/`+(data.accompanist || null)+`/`+(data.email || null)+`/`+(data.hotel || null)+`/`+(data.invoice || null)+`/`+(data.attended || null)+`/`+(data.bus || null);
+        const url=`http://localhost:4000/api/guest/update/`+(data.uuid || null)+`/`+(data.name || null)+`/`+true+`/`+(data.accompanist || null)+`/`+(data.email || null)+`/`+(data.hotel || null)+`/`+(data.invoice || null)+`/`+(data.attended || null)+`/`+(data.bus || null);
         console.log(url);
         const response = await fetch(url);
         if (!response.ok) {

@@ -17,6 +17,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import { Grid } from '@material-ui/core';
 import HomeIcon from '@material-ui/icons/Home';
 import CropFreeIcon from '@material-ui/icons/CropFree';
+import Container from '../Container';
 
 const drawerWidth = 240;
 
@@ -31,6 +32,9 @@ const useStyles = makeStyles(theme => ({
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
     }),
+  },
+  container:{
+    marginTop: 50,
   },
   appBarShift: {
     width: `calc(100% - ${drawerWidth}px)`,
@@ -88,6 +92,15 @@ export default function PersistentDrawerLeft() {
   const classes = useStyles();
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
+  const [thing, setThing]=React.useState("table")
+
+  const handleClickInicio = () => {
+    setThing("table");
+  };
+
+  const handleClickLeer = () => {
+    setThing("reader");
+  };
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -98,6 +111,9 @@ export default function PersistentDrawerLeft() {
   };
 
   return (
+    <Grid container>
+      <Grid item xs={12}>
+
     <div className={classes.root}>
       <CssBaseline />
       <AppBar
@@ -137,12 +153,14 @@ export default function PersistentDrawerLeft() {
         </div>
         <Divider />
         <List>
-          {['Inicio', 'Leer QR'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>{index === 0 ?  <HomeIcon /> : <CropFreeIcon />}</ListItemIcon>
-              <ListItemText primary={text} />
+            <ListItem button key={"Inicio"} onClick={handleClickInicio}>
+              <ListItemIcon><HomeIcon /></ListItemIcon>
+              <ListItemText primary={"Inicio"} />
             </ListItem>
-          ))}
+            <ListItem button key={"Leer QR"} onClick={handleClickLeer}>
+              <ListItemIcon><CropFreeIcon /></ListItemIcon>
+              <ListItemText primary={"Leer QR"}/>
+          </ListItem>
         </List>
       </Drawer>
       <main
@@ -152,6 +170,13 @@ export default function PersistentDrawerLeft() {
       >
         <div className={classes.drawerHeader} />
       </main>
+      
+      
     </div>
+      </Grid>
+      <Grid item xs={12}>
+        <Container thing={thing}/>
+      </Grid>
+    </Grid>
   );
 }
