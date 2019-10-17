@@ -92,7 +92,7 @@ export const localization = {
 
 export const data = async function () {
     try {
-        const response = await fetch(`http://localhost:4000/api/guests`);
+        const response = await fetch(`http://192.168.100.21:4000/api/guests`);
         if (!response.ok) {
             throw Error(response.statusText);
         }
@@ -108,7 +108,7 @@ export const data = async function () {
 
 export const insertGuest = async function (data) {
     try {
-        const response = await fetch(`http://localhost:4000/api/guest/create/`+(data.name || null)+`/`+true+`/`+(data.accompanist || null)+`/`+(data.email || null)+`/`+(data.hotel || null)+`/`+(data.invoice || null)+`/`+(data.attended || null)+`/`+(data.bus || null));
+        const response = await fetch(`http://192.168.100.21:4000/api/guest/create/`+(data.name || null)+`/`+true+`/`+(data.accompanist || null)+`/`+(data.email || null)+`/`+(data.hotel || null)+`/`+(data.invoice || null)+`/`+(data.attended || null)+`/`+(data.bus || null));
         if (!response.ok) {
             throw Error(response.statusText);
         }
@@ -124,7 +124,7 @@ export const insertGuest = async function (data) {
 
 export const updateGuest = async function (data) {
     try {
-        const url=`http://localhost:4000/api/guest/update/`+(data.uuid || null)+`/`+(data.name || null)+`/`+true+`/`+(data.accompanist || null)+`/`+(data.email || null)+`/`+(data.hotel || null)+`/`+(data.invoice || null)+`/`+(data.attended || null)+`/`+(data.bus || null);
+        const url=`http://192.168.100.21:4000/api/guest/update/`+(data.uuid || null)+`/`+(data.name || null)+`/`+true+`/`+(data.accompanist || null)+`/`+(data.email || null)+`/`+(data.hotel || null)+`/`+(data.invoice || null)+`/`+(data.attended || null)+`/`+(data.bus || null);
         console.log(url);
         const response = await fetch(url);
         if (!response.ok) {
@@ -142,7 +142,7 @@ export const updateGuest = async function (data) {
 
 export const deleteGuest = async function (data) {
     try {
-        const response = await fetch(`http://localhost:4000/api/guest/delete/`+data.uuid);
+        const response = await fetch(`http://192.168.100.21:4000/api/guest/delete/`+data.uuid);
         if (!response.ok) {
             throw Error(response.statusText);
         }
